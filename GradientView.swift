@@ -88,7 +88,7 @@ class GradientView: UIView {
         setUp()
         
     }
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -130,10 +130,10 @@ class GradientView: UIView {
         gradientLayer.startPoint = CGPoint(x: startX, y: startY)
         gradientLayer.endPoint = CGPoint(x: endX, y: endY)
         
-        if gradientLayer != nil {
-            
+//        if gradientLayer != nil {
+        
             
             self.setNeedsDisplay()
-        }
+//        }
     }
 }
