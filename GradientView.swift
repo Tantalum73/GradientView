@@ -113,7 +113,7 @@ class GradientView: UIView {
     }
     
     private func setUp() {
-        layer.addSublayer(gradientLayer)
+        layer.insertSublayer(gradientLayer, atIndex: 0)
         
         updateTheView()
 
