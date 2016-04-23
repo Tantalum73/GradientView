@@ -3,7 +3,7 @@
 //  ClubNews
 //
 //  Created by Andreas Neusüß on 31.03.15.
-//  Copyright (c) 2015 Cocoawah. All rights reserved.
+//  Copyright (c) 2015 Anerma. All rights reserved.
 //
 
 import UIKit
@@ -12,7 +12,7 @@ import UIKit
 A gradient to lay behind any view that will also be rendered in Interface Builder.
 */
 @IBDesignable
-class GradientView: UIView {
+final class GradientView: UIView {
     
     /**
     One of the two colors of the gradient
@@ -43,7 +43,7 @@ class GradientView: UIView {
     }
     /**
     X value of start coordinate. Between 0 and 1.
-    Will contruct a CGPoint together with the Y variable.
+    Will construct a CGPoint together with the Y variable.
     */
     @IBInspectable
     var startX : CGFloat = 0.5  {
@@ -53,7 +53,7 @@ class GradientView: UIView {
     }
     /**
     Y value of start coordinate. Between 0 and 1.
-    Will contruct a CGPoint together with the X variable.
+    Will construct a CGPoint together with the X variable.
     */
     @IBInspectable
     var startY : CGFloat = 0.0  {
@@ -63,7 +63,7 @@ class GradientView: UIView {
     }
     /**
     X value of end coordinate. Between 0 and 1.
-    Will contruct a CGPoint together with the Y variable.
+    Will construct a CGPoint together with the Y variable.
     */
     @IBInspectable
     var endX : CGFloat = 0.5  {
@@ -73,7 +73,7 @@ class GradientView: UIView {
     }
     /**
     Y value of end coordinate. Between 0 and 1.
-    Will contruct a CGPoint together with the X variable.
+    Will construct a CGPoint together with the X variable.
     */
     @IBInspectable
     var endY : CGFloat = 1.0  {
